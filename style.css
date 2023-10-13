@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: hsl(30, 38%, 92%);
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    margin: 50px;
+}
+.container img{
+    height: 100%;
+    border-top-left-radius: 2%;
+    border-bottom-left-radius: 2%;
+}
+
+
+.container{
+    max-width: 550px;
+    display: flex;
+    height: 450px;
+    margin-top: 100px;
+    background-color: hsl(0, 0%, 100%);
+    justify-content: center;
+    /* align-items:center; */
+    border-radius: 2%;
+}
+.container .boxes{
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.add-to-cart img{
+    height: 14px;
+}
+.container .boxes h4{
+    color: hsl(212, 21%, 14%);
+    font-family: "Montserrat";
+    font-weight: 500;
+    opacity: 70%;
+    letter-spacing: 2px;
+}
+.container .boxes h1{
+    color: hsl(212, 21%, 14%);
+    font-family: "Fraunces";
+}
+
+.container .boxes p{
+    color: hsl(212, 21%, 14%);
+    font-family: "Montserrat";
+    font-weight: 500;
+    font-size: 14px;
+    opacity: 70%;
+}
+.container .boxes .price-tag{
+    display: flex;
+    justify-content:space-evenly;
+    align-items:center ;
+}
+.container .boxes .price-tag .tag1{
+    height: 25px;
+    font-size: x-large;
+    font-family: "Fraunces";
+    color: hsl(160, 92%, 9%);
+    font-weight: 700;
+}
+.container .boxes .price-tag .tag2{
+    text-decoration: line-through;
+    font-family: "Fraunces";
+}
+.container .add-to-cart{
+    background-color:hsl(158, 36%, 37%) ;
+    border-radius: 1.5rem;
+    height: 30px;
+    display: flex;
+    padding: 5px;
+    margin-top: 10px;
+    justify-content: center;
+}
+.container .add-to-cart img{
+    margin-right: 5px;
+    height: fit-content;
+}
+.container .add-to-cart a{
+    color: white;
+    opacity: 100%;
+    text-decoration: none;
+}
+
+@media(max-width:500px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        height: 700px;
+    }
+    .container img{
+        border-radius: 2% 2% 0 0;
+        height: 55%;
+    }
+    .container .boxes{
+        display: flex;
+        flex: 1;
+        flex-flow: column;
+        justify-content: space-evenly;
+    }
+}
